@@ -1,0 +1,14 @@
+对peewee 轻量级ROM 的学习
+比sqlchemy简洁
+原地址：
+https://www.jianshu.com/p/9099ba37d6f1
+
+jsonfield需要自己实现接口！！！
+https://stackoverflow.com/questions/40553790/peewee-orm-jsonfield-for-mysql
+
+文件说明：
+data_prepare.py 准备的展厅系统的测试数据
+demo.py peewee样例
+models.py 展厅系统数据库部分表模型
+mytest.py 随便写的测试脚本
+
