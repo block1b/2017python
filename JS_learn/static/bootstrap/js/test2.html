@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        JavaScript 能够直接写入HTML 输出流中：
+    </p>
+    <script>
+        document.write("<h1>这h1是一个标题</h1>");
+        document.write("<p>这p是一个段落</p>");
+    </script>
+    <p>
+        只能在html输出流中使用<strong>document.write</strong>
+    </p>
+    <!--按钮-->
+    <p>
+        javascript 能够对事件做出反应，如点击按钮
+    </p>
+    <button type="button" onclick="alert('欢迎！')">点我！</button>
+    <!--改变html内容-->
+    <h1>js改变html内容</h1>
+    <p id="demo">
+        javascript 能够改变 html的内容。
+    </p>
+    <script>
+        function myFunction()
+        {
+            x=document.getElementById("demo");  // 找到元素
+            x.innerHTML="hello javascript";  // 改变内容
+        }
+    </script>
+    <button type="button" onclick="myFunction()">点击这里！</button>
+    <!--循环切换,样例可以，这里不能循环。？可能是因为图片格式为gif，待定-->
+    <BR>
+    <script>
+    function changeImage()
+    {
+        element=document.getElementById('myimage')
+        if (element.src.match("bulbon"))
+        {
+            element.src="./images/image2.jpg";
+        }
+        else
+       {
+            element.src="./images/image3.jpg";
+       }
+    }
+    </script>
+    <img id="myimage" onclick="changeImage()"
+    src="./images/image2.jpg" width="100" height="180">
+    <br>
+    <!--改变html样式-->
+    <p id="demo2">
+        javascript 能够改变html的样式。
+    </p>
+    <script>
+        function changeType()
+        {
+            y = document.getElementById("demo2")
+            y.style.color="#ff0000";
+        }
+    </script>
+    <button type="button" onclick="changeType()">点击这里</button>
+    <br>
+    <p>请输入数字，如果输入值不是数字，浏览器会弹出提示框。</p>
+    <input id="demo3" type="text">
+    <script>
+        function myjudge()
+        {
+            var z=document.getElementById("demo3").value;
+            if(z==""||isNaN(z))
+            {
+                alert("不是数字");
+            }
+        }
+    </script>
+    <button type="button" onclick="myjudge()">点击这里</button>
+    <br>
+    <!--window.alert()-->
+    <!--<script>-->
+        <!--window.alert(5+6);-->
+    <!--</script>-->
+    <br>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+div,p,ul,li,p,ol,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+}
+
+.frame2_title{
+	width: 100%;
+	height: 110px;
+	background: #01a4b5;
+	color: #fff;
+	padding-top: 20px;
+}
+.frame2_title h3{
+	line-height: 40px;
+}
+.frame2_title p{
+	line-height: 30px;
+}
+/*大图*/
+.frame2_img{
+	width: 100%;
+}
+.frame2_img img{
+	width: 100%;
+}
+
+/*内容*/
+.frame2_text{
+	background:#00A4B4;
+	padding: 40px;
+	color: #fff;
+}
+.frame2_text h3{
+	height: 80px;
+}
+.frame2_text p{
+	font-size: 14px;
+	line-height: 28px;
+}
+.frame2_text h5{
+	color: #000;
+	line-height: 40px;
+}
+
+.frame1_title{
+	width: 100%;
+	height: 110px;
+	color: 	#707070;
+	padding-top: 20px;
+}
+.frame1_title h2 h6{
+	line-height: 40px;
+}
+.frame1_title p{
+	line-height: 30px;
+}
+
+.frame3_title{
+	width: 100%;
+	height: 310px;
+	background: #01a4b5;
+	color: #fff;
+	padding-top: 20px;
+}
+
+.frame1_title button{
+	background-color: #01a4b5;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

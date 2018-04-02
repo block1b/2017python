@@ -1,0 +1,15 @@
+功能：生成规定格式的js文件，主要为json格式
+本包主要使用序列化模型数据为json
+引用模块：
+from marshmallow import Schema, fields
+原文地址:
+https://segmentfault.com/a/1190000005805982
+学习文件说明：
+demo.py样例脚本
+biggateway.py大网关配置文件模型
+dev_config.py整个配置文件的模型
+dev_vonf.js目标文件
+
+教程中还有python ORM （操作数据库的模型框架）Peewee，待学习
+
+2018年1月3日19点50分

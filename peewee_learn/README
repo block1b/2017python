@@ -1,0 +1,28 @@
+对peewee 轻量级ROM 的学习
+比sqlchemy简洁
+原地址：
+https://www.jianshu.com/p/9099ba37d6f1
+
+jsonfield需要自己实现接口！！！
+https://stackoverflow.com/questions/40553790/peewee-orm-jsonfield-for-mysql
+
+文件说明：
+data_prepare.py 准备的展厅系统的测试数据
+demo.py peewee样例
+models.py 展厅系统数据库部分表模型
+mytest.py 随便写的测试脚本
+
+
+！！！Model若不指定主键，会默认添加自增类型id
+其他细节可在models中查看，以后继续补充
+哇哇哇！！！厉害
+已有数据库？
+peewee使用pwiz来生成模型
+例如已有Person数据表
+python -m pwiz -e postgresql Person > Person_models.py
+2018年2月3日
+
+ # 删除
+ 模型实例的对象i.delete_instance()
+
+2018年2月4日

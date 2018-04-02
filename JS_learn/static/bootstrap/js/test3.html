@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>block1b</title>
+</head>
+<body>
+    <h1>我的第n个web页面</h1>
+    <p id="demo">
+        我的第一个段落
+    </p>
+    <script>
+        <!--innerHTML是用来修改HTML元素的javascript代码-->
+        document.getElementById("demo").innerHTML = "修改后的段落";
+    </script>
+    <br>
+    <script>
+        <!--使用doucument.write()向文档输出写内容若在文档已经加载后执行会覆盖整个页面-->
+        document.write(Date());
+    </script>
+    <br>
+    <button type="button" onclick="myFunctiontest()"></button>
+    <script>
+        function myFunctiontest()
+        {
+            document.write(Date());
+        }
+    </script>
+    <br>
+    <script>
+        <!--在浏览器中显示javascript值-->
+        var a=5;
+        var b=7;
+        var c=a+b;
+        console.log(c);
+    </script>
+    <br>
+    <!--javascript-->
+    <p id="demo1"></p>
+    <script>
+        // javaxcript的注释与c相同，也可以用html的注释
+        /*
+        * 多行注释
+        * balabala*/
+        document.getElementById("demo1").innerHTML="求和：5+2="+(5+2);
+    </script>
+    <br>
+    <script>
+        var x=5;
+        var y=6;
+        var z=x+y;
+        document.write(x + "<br>");
+        document.write(y + "<br>");
+        document.write(z + "<br>");
+    </script>
+    <br>
+    <p>点击这里创建变量，并显示结果</p>
+    <button onclick="myFunctiontest2()"></button>
+    <p id="demo3"></p>
+    <script>
+        function myFunctiontest2(){
+            var carname="Vovlvo";
+            document.getElementById("demo3").innerHTML=carname;
+        }
+    </script>
+    <br>
+    <script>
+        var person=
+            {
+                firstname : "jone",
+                lastname : "doe",
+                id : 5566
+            };
+        document.write(person.firstname + "<br>");
+        document.write(person["lastname"] + "<br>");
+    </script>
+    <br>
+    <!--带参数的函数-->
+    <script>
+        function myFunction3(name, job){
+            alert("welcome" + name + ",the" + job);
+        }
+    </script>
+    <p>点击这个按钮来调用钓友参数的函数</p>
+    <button onclick="myFunction3('block', 'google')">点击这里</button>
+    <br>
+    <p>本例调用的函数会执行一个计算，然后返回结果：</p>
+    <p id="demo4"></p>
+    <script>
+        function myFunction4(a, b){
+            return a*b;
+        }
+        document.getElementById("demo4").innerHTML=myFunction4(4, 3);
+    </script>
+    <br>
+<!--html事件-->
+    <button onclick="getElementById('demo5').innerHTML=Date()">现在时间是？</button>
+    <p id="demo5"></p>
+    <br>
+    <button onclick="this.innerHTML=Date()">点我查看现在时间</button>
+    <br>
+    <p>点击按钮执行<em>disaplayDate()</em>函数。</p>
+    <button onclick="displayDate()">点击这里</button>
+    <script>
+        function displayDate(){
+            document.getElementById("demo6").innerHTML=Date();
+        }
+    </script>
+    <p id="demo6"></p>
+</body>
+</html>

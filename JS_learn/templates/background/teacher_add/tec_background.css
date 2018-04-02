@@ -1,0 +1,99 @@
+div,p,ul,li,p,ol,h1,h2,h3,h4,h5,h6{
+	margin: 0 5px;
+	padding: 0;
+	text-align: center;
+}
+/*background1 ....以及background1和background2的公共样式*/
+.bg1-wrap{
+	width: 100%;
+	height: auto;
+	margin:100px 0;
+}
+
+.bg1_left{
+	width: 300px;
+	height: 215px;
+	float: left;
+	font-size: 38px;
+	line-height: 215px;
+	text-align: center;
+	color: #fff;
+}
+.bg1_right{
+	width: 655px;
+	height: 165px;
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	color: #fffefd;
+	padding-top:50px;
+}
+
+/*background0*/
+.bg0{
+	width:955px;
+	height: 215px;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	padding-right: 75px;
+}
+.bg0_h{
+	text-align: center;
+	font-family: Georgia;
+	font-size: 40px;
+}
+.bg0_p{
+	text-align: left;
+	font-size: 20px;
+	width: 1050px;
+	height: 2000px;
+
+}
+.bg4_pf{
+	width: 100%;
+}
+
+/*background4*/
+.bg4{
+	width: 1050px;
+	height: 230px;
+	background: #01a4b5;
+	margin: 0 auto;
+	padding-left: 70px;
+	padding-top:10px;
+}
+.bg4 h2{
+	color:#fff;
+	text-align: center;
+}
+.bg4 p{
+	color:#fff;
+	text-align: left;
+}
+.float_div{
+	float: left;
+}
+.bg4_about{
+	width: 1050px;
+	height: 1000px;
+	background: #01a4b5;
+	margin: 0 auto;
+	padding-left: 70px;
+	padding-top:10px;
+}
+img{
+	width:955px;
+}
+
+.bg4_pf button{
+	background-color: #01a4b5;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
