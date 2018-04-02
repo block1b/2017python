@@ -1,0 +1,1 @@
+pyinstaller -i .\1.ico -w -F .\post_send.py -p C:\python27;
