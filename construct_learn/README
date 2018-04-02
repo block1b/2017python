@@ -1,0 +1,56 @@
+为了解决python中没有byte类型的数据，和方便byte类型的数据操作
+第三方包：construct
+from construct import Struct, OptionalGreedyRange, UBInt8, UBInt16, ULInt64
+from construct import ULInt16, LFloat32
+from construct.macros import Array
+
+参数序列化数字字符串
+Struct 定义了一个列表结构
+OptionalGreedyRange 贪婪存储参数,可以在Struct中定义不定长度的Struct,[key:[Container:Struct,Container:Struct,,,n]]
+Arry 可以在Struct中定义自定义长度的Struct,[key:[Container:Struct,Container:Struct,,,n]]
+多字节的结构是按大端序计算的emmm
+UBInt8, UBInt16, 按大端序存储
+ULInt64,ULInt16, LFloat32，按小端序存储
+首先，为什么会有小端字节序？
+答案是，计算机电路先处理低位字节，效率比较高，因为计算都是从低位开始的。所以，计算机的内部处理都是小端字节序。
+但是，人类还是习惯读写大端字节序。所以，除了计算机的内部处理，其他的场合几乎都是大端字节序，比如网络传输和文件储存。
+所以我们看到的数组什么的就是大端序！！！
+大小端序说明：http://www.ruanyifeng.com/blog/2016/11/byte-order.html
+计算机内部是小端序 ！！！
+
+字符串操作：https://www.jianshu.com/p/093702933003
+
+
+内置类型：bytearry
+内置函数：
+来源：http://www.runoob.com/python/python-func-chr.html
+    1.chr() 用一个范围在 range（256）内的（就是0～255）整数作参数，返回一个对应的字符。
+
+    语法
+    以下是 chr() 方法的语法:
+
+    chr(i)
+    参数
+    i -- 可以是10进制也可以是16进制的形式的数字。
+    返回值
+    返回值是当前整数对应的ascii字符。
+
+    实例
+    以下展示了使用 chr() 方法的实例：
+
+    >>>print chr(0x30), chr(0x31), chr(0x61)   # 十六进制
+    0 1 a
+    >>> print chr(48), chr(49), chr(97)         # 十进制
+    0 1 a
+
+    2.bytearry.fromhex()
+    bytearray.fromhex(string) -> bytearray
+
+    3.binascii.b2a_hex()
+    返回16进制表示的2进制数据
+
+    4.Python join() 方法用于将序列中的元素以指定的字符连接生成一个新的字符串。
+    str = "-";
+    seq = ("a", "b", "c"); # 字符串序列
+    print str.join( seq );
+    /*输出：a-b-c*/
